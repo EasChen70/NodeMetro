@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+      "jquery": "^3.7.1",
+      "mongoose": "^8.0.3",
+      "portscanner": "^2.2.0"
+    }
+  }
+  

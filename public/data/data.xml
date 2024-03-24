@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <services>
+        <manicures>
+            <manicure>
+                <type>Basic Manicure</type>
+                <description>Shape Nails, Soak, Cuticle Care, Lotion Massage, Warm Towel</description>
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                    <option>Chrome</option>
+                    <option>Ombre</option>
+                    <option>Dipping Powder</option>
+                </options>
+                <add>
+                    <option>Soak-Off</option>
+                </add>                
+            </manicure>
+            <manicure>
+                <type>Deluxe Manicure</type>
+                <description>Shape Nails, Soak, Cuticle Care, Exfoliating Sugar Scrub, Lotion Massage, Warm Towel, Paraffin w/Mittens</description>
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                    <option>Chrome</option>
+                    <option>Ombre</option>
+                    <option>Dipping Powder</option>
+                </options>
+                <add>
+                    <option>Soak-Off</option>
+                </add>            
+            </manicure>
+        </manicures>
+
+        <pedicures>
+            <pedicure>
+                <type>Express Pedicure</type>
+                <description>Shape Nails, Foot Bath</description>
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>            
+            </pedicure>
+            <pedicure>
+                <type>Sport Pedicure</type>
+                <description>Shape Nails, Foot Bath, Cuticle Care</description>            
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>            
+            </pedicure>
+            <pedicure>
+                <type>Spa Pedicure</type>
+                <description>Shape Nails, Foot Bath, Cuticle Care, Sole Scrub, Exfoliating Sea Salt Scrub, Lotion Massage, Warm Towel</description>            
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>            
+            </pedicure>
+            <pedicure>
+                <type>Deluxe Pedicure</type>
+                <description>Shape Nails, Foot Bath, Cuticle Care, Sole Scrub, Exfoliating Sugar Scrub, Mint Masque w/Warm Towel Wrap, Lotion Massage, Warm Towel, Heel Paraffin Wax</description>            
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>            
+            </pedicure>
+            <pedicure>
+                <type>Luxury Pedicure</type>
+                <description>Shape Nails, Foot Bath, Cuticle Care, Callus Treatment, Exfoliating Sugar Scrub, Mint Masque w/Warm Towel Wrap, Oil + Lotion Massage, Warm Towel, Hot Stone Massage, Heel Paraffin Wax</description>            
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>            
+            </pedicure>
+            <pedicure>
+                <type>Metro Signature Pedicure</type>
+                <description>Shape Nails, Foot Bath, Cuticle Care, Callus Treatment, Exfoliating Sugar Scrub, Cool Gel Massage, Mint Masque w/Warm Towel Wrap, Oil + Lotion Massage, Warm Towel, Hot stone Massage, Full Paraffin w/Booties</description>            
+                <options>
+                    <option>Regular Polish</option>
+                    <option>Shellac or Gel</option>
+                </options>        
+            </pedicure>
+        </pedicures>
+
+        <spacombos>
+            <combo>
+                <type>Spa Mani + Express Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>            
+            </combo>
+            <combo>
+                <type>Spa Mani + Sport Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>    
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>        
+            </combo>
+            <combo>
+                <type>Spa Mani + Spa Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>            
+            </combo>
+            <combo>
+                <type>Spa Mani + Deluxe Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>            
+            </combo>
+            <combo>
+                <type>Spa Mani + Luxury Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>            
+            </combo>
+            <combo>
+                <type>Spa Mani + Metro Signature Pedi</type>
+                <description>Combo comes w/ Regular Polish</description>
+                <options>
+                    <option>Deluxe Manicure add-on</option>
+                    <option>Nail Gel Polish</option>
+                    <option>Dipping Powder add-on</option>
+                    <option>Chrome add-on</option>
+                    <option>Ombre add-on</option>
+                    <option>Toe-Nail Gel Polish</option>
+                </options>           
+            </combo>
+        </spacombos>
+    </services>
+</root>

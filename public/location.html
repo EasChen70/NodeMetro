@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "AIzaSyC8QyP6a1kYHLYs9l3NY9fP3GXqgMXICr8",
+          v: "weekly",
+          // from google documentation
+        });
+      </script>
+    <link rel = "stylesheet" href = "css/expanded.css">
+    <title>MetroNails Location</title>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <a href = "index"><img src = "assets/originallogo.png" alt= "Original Logo"></a>
+        </div>
+        <div class = "navigation">
+            <a href = "index">Home</a>
+            <div class = "dropdown1">
+                <a href = "services">Services</a>
+                <div class = "dropdown1-content">
+                    <a href = "manicure">Manicure</a>
+                    <a href = "pedicure">Pedicure</a>
+                    <a href = "spacombo">Spa Combo</a>
+                </div>
+            </div>
+            <div class = "dropdown2">
+                <a href = "about">About</a>
+                <div class = "dropdown2-content">
+                    <a href = "location">Location</a>
+                    <a href = "gallery">Gallery</a>
+                </div>
+            </div>            
+            <a href = "contact">Contact</a>
+        </div>
+    </header>
+    <main id = "location_main">
+        <div class = "locationcontainer">
+            <div class="locationinfo">
+                <div class="location">
+                    <p class = "lpara">Location</p>
+                    <p class = "minipara">395 Wickenden St,<br>
+                    Providence RI, 02916</p>
+                </div>
+            
+                <div class="hours">
+                    <p class = "lpara">Operating Hours</p>
+                    <ul>
+                        <li>Monday: 9:30AM-7PM</li>
+                        <li>Tuesday: 9:30AM-7PM</li>
+                        <li>Wednesday: 9:30AM-7PM</li>
+                        <li>Thursday: 9:30AM-7PM</li>
+                        <li>Friday: 9:30AM-7PM</li>
+                        <li>Saturday: 9AM-6PM</li>
+                        <li>Sunday: 9AM-5PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "map"></div>
+        </div>
+    </main>
+    <script src = "src/location.js"></script>
+</body>
+</html>

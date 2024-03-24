@@ -1,0 +1,555 @@
+* {
+    background-color: #DBAE58;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navigation {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+    padding-right: 130px;
+}
+
+.navigation a {
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #070504; 
+}
+
+.dropdown1,
+.dropdown2 {
+    position: relative;
+}
+
+.dropdown1-content,
+.dropdown2-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the button */
+    left: 0; /* Align with the left edge of the navigation links */
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1:hover .dropdown1-content,
+.dropdown2:hover .dropdown2-content {
+    display: block;
+}
+
+/* Links inside dropdown */
+.dropdown1-content a,
+.dropdown2-content a{
+    color:#070504;
+    padding-top: 8px;
+    text-decoration: none;
+    display: block;
+    background-color: antiquewhite;
+    text-align: left;
+}
+
+.dropdown1-content a:hover,
+.dropdown2-content a:hover {
+    color:#f9f9f9;
+    background-color: #eca239;
+}
+
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #070504;
+}
+
+.MissionStatement{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    text-align: center;
+}
+
+.Description{
+    text-align: center;
+}
+
+.Images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Style for the container of each image */
+.Manicure,
+.Pedicure,
+.SpaCombo {
+    position: relative;
+    margin: 5px 20px;
+}
+
+
+.Manicure h6,
+.Pedicure h6,
+.SpaCombo h6 {
+    margin-top: 0%;
+}
+
+.button-container {
+    position: absolute; 
+    bottom: 80px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+
+.button-container .button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 194, 12, 0.92); /* Translucent yellow background color */
+    border: none; /* Remove button border */
+    border-radius: 15px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    text-decoration: none;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-container .button:hover {
+    background-color: #eca239; /* Button background color on hover */
+}
+
+#Author p{
+    font-size: smaller;
+}
+
+/* Gallery.html styling */
+
+#gallery_main {
+    gap: 20px; /* Adjust gap between columns */
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    display: flex;
+    justify-content: center; /* Center-align the columns */
+    align-items: center; /* Center-align the columns */
+    margin: 20px; /* Margin around the row of columns */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floated elements */
+}
+
+/* Styling for columns (recipe cards) */
+.column {
+    width: 30%; /* Set width for each column (card) */
+    padding: 0 10px; /* Padding around each column */
+  }
+
+.holder {
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2); /* Box shadow for cards */
+    width: auto;
+    height: auto; 
+    padding: 10px; /* Padding within each card */
+    border-radius: 9px; /* Add rounded corners to cards */
+    transition: 0.3s;
+}
+
+.holder:hover {
+    background-color: #1d1b1b00; /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition effect */
+    transform: scale(1.05);
+}
+
+.zoomed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits within the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 999; /* Ensure the zoomed image appears above other content */
+    cursor: pointer; /* Show pointer cursor when hovering over the image */
+}
+
+/* Alt text styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* arrow buttons for zoomed pic */
+.arrow {
+    position: fixed;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1001; /* Ensure arrows appear above other elements */
+}
+
+.arrow:hover{
+    transform: scale(1.1);
+}
+
+/* Style for left arrow button */
+.left {
+    left: 15px;
+}
+
+/* Style for right arrow button */
+.right {
+    right: 15px;
+}
+
+#services_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 50%;
+}
+
+.manicure-services,
+.pedicure-services,
+.spacombo-services{
+    width: 100%;
+    min-height: 145px;
+    min-width: 615px;
+    margin-top: 15px;
+    display: flex;
+    background-color: #989898;
+    border-radius: 5%;
+    flex-direction: row-reverse;
+}
+
+
+.holder-services{
+    border-radius: 5%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+    background-color: #989898;
+}
+
+.hlink,
+.booking{
+    width: 60%; 
+    height: 50px; 
+    margin: 15px 0 10px 55px;; 
+    padding: 5px; 
+    background-color: #3d3d41; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+#manicure-main,
+#pedicure-main,
+#spacombo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 50%;
+}
+
+.Service-Container{
+    background-color: rgba(240, 255, 255, 0.74);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    min-height: 500px;
+    width: 80%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.bookingbutton {
+    flex-grow: 0;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #bda505; 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.bookingbutton:hover {
+    background-color: #b37100; 
+}
+
+.Offered-Services, 
+.Service-Prices {
+    margin-top: 1%;
+    flex-basis: calc(50% - 10px);
+}
+
+.row-serv,
+.row-pri{
+    background-color: rgba(240, 255, 255, 0.74);
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.aboutdescription{
+    background-color: rgba(240, 255, 255, 0.74);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.aboutcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 77%;
+}
+
+.aboutlocation{
+    background-color: rgba(240, 255, 255, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    width: 90%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.operationhours{
+    background-color: rgba(240, 255, 255, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    width: 60%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+
+.instagram-icon{
+    display: inline-block;
+    color:#070504;
+}
+
+
+.instagram-icon:hover {
+    transform: scale(1.15);
+}
+
+#contact_main,
+#giftcard_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.contactcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 77%;
+}
+
+.contactdescription{
+    background-color: rgba(240, 255, 255, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    width: 90%;
+    border-style: solid;
+    border-radius: 5%;
+}
+.contactus{
+    width: 100%;
+    margin-top: 2%;
+}
+.emailcontact{
+    background-color: rgba(240, 255, 255, 0.74);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    width: 90%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.locationcontainer{
+    display: flex;
+}
+
+.locationinfo {
+    background-color: rgba(240, 255, 255, 0.74);
+    padding: 20px; 
+    border: 2px solid #000000; 
+    border-radius: 5%; 
+    width: 30%;
+    margin-left: 9%; 
+    margin-top: 3%;
+}
+
+.location,
+.hours {
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-size: smaller;
+    color: #070504;
+}
+
+.lpara{
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bold;
+}
+.minipara{
+    background-color: transparent;
+    font-size: medium;
+}
+
+ul {
+    background-color: transparent;
+    margin-top: 0; 
+    padding-left: 20px; 
+}
+
+li {
+    background-color: transparent;
+    list-style-type: none; 
+    font-size: medium;
+}
+
+#map{
+    background-color: transparent;
+    padding: 20px; 
+    border: 2px solid #000000; 
+    border-radius: 5%; 
+    width: 30%;
+    margin-left: 10%; 
+    margin-top: 3%;
+}
+
+#map * {
+    background-color: transparent;
+}
+
+/* Responsive style for smaller screen */
+
+@media only screen and (max-width: 750px){
+    .row {
+        flex-direction: column; /* Change to a single column layout */
+        align-items: center; /* Center-align the columns */
+    }
+
+    .column {
+        width: 80%; /* Set width for each column (card) to 100% for single column layout */
+        margin: 10px 0; /* Add margin between rows */
+    }
+
+
+    #services_main {
+        width: 50%;
+    }
+    .service {
+        width: 50%;
+    }
+}

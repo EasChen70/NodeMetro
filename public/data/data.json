@@ -1,0 +1,143 @@
+{
+    "manicures":[
+        {"Basic Manicure": [
+            {"Description": "Shape Nails, Soak, Cuticle Care, Lotion Massage, Warm Towel"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel",
+                "Chrome",
+                "Ombre",
+                "Dipping Powder"
+            ]},
+            {"AddOns":[
+                "Soak-Off"
+            ]}
+        ]},
+        {"Deluxe Manicure": [
+            {"Description": "Shape Nails, Soak, Cuticle Care, Exfoliating Sugar Scrub, Lotion Massage, Warm Towel, Paraffin w/Mittens"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel",
+                "Chrome",
+                "Ombre",
+                "Dipping Powder"
+            ]},
+            {"AddOns":[
+                "Soak-Off"
+            ]}
+        ]}
+    ],
+    "pedicures":[
+        {"Express Pedicure": [
+            {"Description": "Shape Nails, Foot Bath"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]},
+        {"Sport Pedicure": [
+            {"Description": "Shape Nails, Foot Bath, Cuticle Care"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]},
+        {"Spa Pedicure": [
+            {"Description": "Shape Nails, Foot Bath, Cuticle Care, Sole Scrub, Exfoliating Sea Salt Scrub, Lotion Massage, Warm Towel"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]},
+        {"Deluxe Pedicure": [
+            {"Description": "Shape Nails, Foot Bath, Cuticle Care, Sole Scrub, Exfoliating Sugar Scrub, Mint Masque w/Warm Towel Wrap, Lotion Massage, Warm Towel, Heel Paraffin Wax"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]},
+        {"Luxury Pedicure": [
+            {"Description": "Shape Nails, Foot Bath, Cuticle Care, Callus Treatment, Exfoliating Sugar Scrub, Mint Masque w/Warm Towel Wrap, Oil + Lotion Massage, Warm Towel, Hot Stone Massage, Heel Paraffin Wax"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]},
+        {"Metro Signature Pedicure": [
+            {"Description": "Shape Nails, Foot Bath, Cuticle Care, Callus Treatment, Exfoliating Sugar Scrub, Cool Gel Massage, Mint Masque w/Warm Towel Wrap, Oil + Lotion Massage, Warm Towel, Hot stone Massage, Full Paraffin w/Booties"},
+            {"Options":[
+                "Regular Polish",
+                "Shellac or Gel"
+            ]}
+        ]} 
+    ],
+    "spacombos":[
+        {"Spa Mani + Express Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]},
+        {"Spa Mani + Sport Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]},
+        {"Spa Mani + Spa Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]},
+        {"Spa Mani + Deluxe Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]},
+        {"Spa Mani + Luxury Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]},
+        {"Spa Mani + Metro Signature Pedi": [
+            {"Description": "Combo comes w/ Regular Polish"},
+            {"Options":[
+                "Deluxe Manicure add-on",
+                "Nail Gel Polish",
+                "Dipping Powder add-on",
+                "Chrome add-on",
+                "Ombre add-on",
+                "Toe-Nail Gel Polish"
+            ]}
+        ]}
+    ]
+
+}
