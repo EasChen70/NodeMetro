@@ -56,7 +56,7 @@ const server = http.createServer((req, res) => {
         case '/css/styles.css':
             serveStaticFile(res, '/public/css/styles.css', 'text/css');
             break;
-        case '/css/expanded.css':
+        case '/css/styles.css':
             serveStaticFile(res, '/public/css/expanded.css', 'text/css');
             break;
         case '/data/data.xml':
