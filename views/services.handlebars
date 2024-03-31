@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+        <script src = "src/services.js" defer></script>
+        <script src = "src/htmlajax.js" defer></script>
+        <link rel = "stylesheet" href = "css/styles.css">
+        <title>{{title}}</title>
+    </head>
+
+    <body>
+        <header>
+            <div class = "logo">
+                <a href = "index"><img src = "assets/originallogo.png" alt= "Original Logo"></a>
+            </div>
+            <div class = "navigation">
+                <a href = "index">Home</a>
+                <div class = "dropdown1">
+                    <a href = "services">Services</a>
+                    <div class = "dropdown1-content">
+                        <a href = "manicure">Manicure</a>
+                        <a href = "pedicure">Pedicure</a>
+                        <a href = "spacombo">Spa Combo</a>
+                    </div>
+                </div>
+                <div class = "dropdown2">
+                    <a href = "about">About</a>
+                    <div class = "dropdown2-content">
+                        <a href = "location">Location</a>
+                        <a href = "gallery">Gallery</a>
+                    </div>
+                </div>            
+                <a href = "contact">Contact</a>
+            </div>
+        </header>
+        <main id = "services_main">
+            <h2 class = "all-services">All Services</h2>
+            <div class = "manicure-services service">
+                <div class = "holder-services">
+                    <button class = "hlink">Manicure</button>
+                    <button class = "booking">Book Now</button>
+                </div>
+            </div>
+            <div class = "pedicure-services service">
+                <div class = "holder-services">
+                    <button class = "hlink">Pedicure</button>
+                    <button class = "booking">Book Now</button>
+                </div>
+            </div>
+            <div class = "spacombo-services service">
+                <div class = "holder-services">
+                    <button class = "hlink">Spa Combo</button>
+                    <button class = "booking">Book Now</button>
+                </div>
+            </div>
+        </main>
+        </body>
+</html>
+
+
